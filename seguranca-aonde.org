@@ -1,0 +1,1262 @@
+#+SETUPFILE: ~/org/templates/level-0-beamer.org
+# # desabilita o superscrito/subscrito | não exporta programação | nao exporta tags
+#+OPTIONS: ^:nil p:nil tags:nil tasks:nil  
+
+#+TITLE: Segurança, aonde?!
+#+AUTHOR: Leslie H. Watter
+#+EMAIL:  watter@gmail.com
+
+
+* Segurança, aonde ?!
+
+**  Uma pergunta para vocês...
+
+ #+CAPTION: 
+ #+LABEL: 
+ #+ATTR_LaTeX: :width 8cm  :placement [h!]
+ [[./images/seg/question-mark-charada.png]]
+
+
+** A BatCaverna é segura? 
+
+ #+CAPTION:
+ #+LABEL: batcaverna-anos-60
+ #+ATTR_LaTeX: :width 10cm  :placement [h!]
+ [[./images/seg/batcaverna-anos60.jpg]]
+
+
+** O que é segurança ?
+
+ + O que é segurança?
+
+** Segurança 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 8cm  :placement [h!]
+[[./images/seg/bodyguards.jpg]]
+
+** Segurança ??
+
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/shrek.jpg]]
+
+** O que é segurança ?
+
+*** Segurança da Informação											:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:END:
+
+A segurança da informação está diretamente relacionada com *proteção de um
+conjunto de informações*, no sentido de preservar o valor que possuem para um 
+indivíduo ou uma organização. 
+#+latex: \\[0.2cm]
+
+São características básicas da segurança da informação os atributos de
+*confidencialidade, integridade, disponibilidade e autenticidade*, não estando
+esta segurança restrita somente a sistemas computacionais, informações
+eletrônicas ou sistemas de armazenamento. 
+#+latex: \\[0.2cm]
+
+*O conceito se aplica a todos os aspectos de proteção de informações e dados*. 
+O conceito de Segurança Informática ou Segurança de Computadores está intimamente
+relacionado com o de Segurança da Informação, incluindo não apenas a segurança
+dos dados/informação, mas também a dos sistemas em si. 
+#+latex: \\[0.2cm]
+
+#+LaTeX: \begin{flushright} Wikipédia \end{flushright}
+
+
+** O que é Segurança ?
+
+#+BEGIN_QUOTE
+segurança é sempre uma escolha entre:
+
+#+LaTeX: \\[1cm]
+
+#+LaTeX: \Large{\textbf{facilidade de uso} x \texttt{proteção}}
+#+END_QUOTE
+
+
+** Segurança da Informação ?
+
+ 1) O que proteger?
+ 2) Quando?
+ 3) Como?
+ 4) Onde?
+ 5) De quem?
+ 6) Por quê?
+
+** Exemplo
+
+#+CAPTION: Backup 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/backup.jpg]]
+
+** Por quê ? 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 8cm  :placement [h!]
+[[./images/shit-happens2.jpg]]
+
+
+** Por quê!?
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/sept11thtowers.jpg]]
+
+
+
+** Segurança, Ogros e semelhanças ...
+
+#+CAPTION: Camadas
+#+LABEL: 
+#+ATTR_LaTeX: :width 8cm  :placement [h!]
+[[./images/seg/camadas-cebola.png]]
+
+
+* Segurança em TI
+
+** Camadas da Segurança de TI
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/camadas-de-protecao.png]]
+
+* Física 
+
+** Física
+
+  + Cercas / Portões
+  + Portas e Portarias
+	+ Catracas
+	+ Detectores de Metais
+	+ Crachás
+  + Sensores de Invasão em Paredes e Janelas
+  + Seguranças
+  + CFTV
+  + Sistemas de Climatização
+  + Documentação (eng. civil/elétrica/hidráulica)
+  + Sistemas de Detecção/Combate a incêndio
+  + Compartimentalização de Ambientes
+
+
+** Datacenter
+
+ + Terreno: Muro, Controle de Acesso, Guaritas e Seguranças
+ + Prédio: Paredes, controle de acesso: recepção, seguranças, catracas
+ + Callcenter: 2 portas de vidro, controle de acesso: crachá, segurança
+ + Datacenter: 2 portas de aço: controle de acesso: crachá + biometria
+   + Racks com chave e Câmeras
+   + Sala Cofre: + biometria
+
+
+* Operações 
+
+** Operações
+
+ + Controles
+   + Hardware e Equipamentos
+   + Software
+   + Pessoal (Gestão de RH)
+ + Manejo de Mídia
+   + Armazenamento
+   + Descarte
+ + Mesas e Quadros /Limpos/
+ + CSIRT
+ + Mecanismos de controle e Verificação
+   + Recuperação de Desastres
+   + Análises de Vulnerabilidades/ Testes de Invasão
+   + Controle de Logs
+
+
+* Acesso 
+
+** Controle de Acesso 
+ + Ambientes
+   + Biometria
+   + Crachás
+ + Sistemas
+   + ACLs
+   + Biometria, tokens, smartcards, etc
+   + SSO (Single SignOn)
+   + Serviços de Autenticação AAA
+ + Os mecanismos de autenticação de usuários dividem-se em tês categorias: baseados
+   + no conhecimento (o que se sabe)
+   + em propriedade (o que se possui)
+   + em características (o que se é)
+
+
+** O AAAA da Segurança 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/AAAA-seguranca.png]]
+
+
+** Problemas ?!
+
+ * Sistema Operacional
+   * <2-> Auto login !?!
+ * Controle de Acesso
+   * <4-> Senhas 'padrão' para acesso aos servidores 
+ * Aplicação
+   * <5-> Aplicações com 'páginas de execução de SQL' direto em produção porque a
+     infraestrutura restringe o acesso.
+   * <5-> Perfis de usuário com superpoderes e senhas fracas (admin/admin)
+
+** Senhas
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/password_strength.png]]
+
+
+
+* Redes
+
+** Segurança de Redes
+
+ + Arquitetura
+   + Segmentação de Rede
+   + DMZ
+   + Honey Nets
+   + Segregação de Serviços e Máquinas
+ + Controles
+   + Firewall
+   + IDS/IPS
+   + Controle de Banda
+   + Gerência de Conteúdo
+   + VPN Criptografada
+   + 802.1X
+ + Extras
+   + Redundância de link
+   + Balanceamento de carga
+
+
+** Segurança de Redes
+
+*** Necessidade
+
+  + A segurança de redes é necessária pelo fato de sistemas computacionais interagirem
+	+ Mensagens confidenciasi são enviadas entre os sistemas (p.ex. transações bancárias)
+	+ Instruções são enviadas de um sistema para outro
+	+ Serviços são fornecidos de um sistema para outros pela Internet
+
+*** Objetivos														:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:BEAMER_act: <2->
+	:END:
+
+  + Estabelecer protocolos seguros que garantam
+	+ Confidencialidade
+	+ Integridade
+	+ Disponibilidade
+
+
+
+* Básica 
+
+** Arquitetura de Segurança
+
+ + Segurança nativa dos sistemas
+ + RFCs de segurança
+ + Classificação da Informação
+ + Homologação de Produtos
+
+
+*** 																:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:BEAMER_act: <2->
+	:END:
+
+  #+begin_quote
+  " Pior que não ter um sistema de segurança, é ter um e não usar."
+  #+end_quote
+
+* Aplicações 
+
+** Segurança de Aplicações
+
+ + Uso de Metodologias de Produção /(SDLC - software development life cycle)/
+ + Implantação de segurança em Desenvolvimento
+ + Mecanismos de Backup e Auditoria
+ + Políticas anti-malware
+ + Controle de licenciamento
+ + Controle de versão
+
+
+** Segurança de Aplicações
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 9cm  :placement [h!]
+[[./images/seg/SDLC_-_Software_Development_Life_Cycle.jpg]]
+
+
+** Segurança e Metodologias
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/SDLC.jpg]]
+
+
+
+
+** Falhas comuns em Aplicações WEB
+
+   1) Cross-Site Scripting (XSS)
+	  * https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
+   2) Cross-Site Request Forgery (CSRF)
+	  * https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
+   3) Click-Jacking
+	  * https://www.owasp.org/index.php/Clickjacking
+   4) SQL Injection
+   5) Shell Injection / Command Injection
+	  * https://www.owasp.org/index.php/Command_Injection
+   6) Phishing / Fraude
+
+
+** XSS															   :noexport:
+
+#+begin_example
+Através de um XSS, o cracker injeta códigos JavaScript em um campo texto 
+de uma página já existente e este JavaScript é apresentado para outros usuários, 
+porque persiste na página.
+
+
+Exemplo de ataque: Imaginem que o cracker insira, em um fórum de um website alvo de ataque, 
+um texto que contenha um trecho de JavaScript. Este JavaScript poderia, por exemplo, 
+simular a página de login do site, capturar os valores digitados e enviá-los a um site que os armazene. 
+
+Quando o texto do fórum for apresentado a outros usuários, um site atacado pelo XSS exibirá o trecho de
+
+ JavaScript digitado anteriormente nos browsers de todos os outros usuários, provocando a brecha de ataque.
+
+O invasor envia um script para o servidor:<script>malicious.js... = SYN onde o servidor recebe o script 
+e interpreta uma nova página inserindo o código como resposta da requisição ao atacante = SYN/ACK.
+Por fim, o atacante recebe a resposta em seu browser = ACK
+
+Nota: Se você estiver usando plugins/extensões em seu navegador como: NoScript ou o
+ Google chrome com o "XSS Auditor" habilitado, os ataques de Cross Site Scripting 
+em sites que estejam vulneráveis não irão funcionar.
+#+end_example
+
+** CSRF															   :noexport:
+
+#+begin_quote
+O CSRF (do inglês Cross-site request forgery- Falsificação de solicitação entre
+sites) é um tipo de exploração maliciosa de um website pelo qual comandos não
+autorizados são transmitidos de um usuário que confia no website 
+#+end_quote
+
+#+begin_example
+O ataque funciona através da inclusão de um link ou script numa página que 
+acede a um site no qual se sabe (ou se supõe) que o utilizador tenha sido autenticado.
+Por exemplo, um usuário, Bob, pode estar a navegar num fórum de bate-papo onde outro usuário, Fred, postou uma mensagem. 
+
+Suponha-se que Fred tenha criado um elemento da imagem HTML que faz referência a uma ação no site do banco de Bob 
+(em vez de um arquivo de imagem), por exemplo,
+<img src="http://bank.example.com/withdraw?account=bob&amount=1000000&for=Fred">
+
+Se o banco de Bob mantém a sua informação de autenticação num cookie, e se o cookie não expirou, 
+então a tentativa do browser de Bob de carregar a imagem irá submeter o formulário de levantamento com o seu cookie, 
+assim, autorizando uma transação sem a aprovação de Bob. A falsificação de solicitação entre sites é um ataque do tipo
+/Confused deputy/ contra um navegador Web. 
+O deputy no exemplo do banco é o navegador Web de Bob que é confundido para fazer mau uso da autoridade de Bob na direção de Fred.
+As seguintes características são comuns ao CSRF:
+
+ + Envolvem sites que dependem de uma identificação do usuário
+ + Exploram a confiança do site nessa identificação
+ + Iludem o navegador do usuário para o envio de solicitações HTTP para um site de destino
+ + Envolvem solicitações HTTP que têm efeitos colaterais
+#+end_example
+
+#+begin_example
+Várias coisas têm que acontecer para que um cross-site request forgery tenha sucesso:
+ 1. O atacante deve ter como alvo tanto um site que não verifica o campo Referer
+    do cabeçalho HTTP (que é comum) ou uma vítima com um bug no navegador ou
+    plug-in que permite alterar o campo Referer (o que é raro). 
+ 2. O atacante deve encontrar uma submissão do formulário no local de destino,
+    ou uma URL que tem efeitos colaterais, que faz algo (por exemplo,
+    transferências de dinheiro, ou mudanças de endereço da vítima e-mail ou
+    senha). 
+ 3. O atacante deve determinar os valores corretos para todos os formulários ou
+    entradas URL; se qualquer um deles são obrigados a serem os valores de
+    autenticação secreta ou identificações que o atacante não pode adivinhar, o
+    ataque irá falhar. 
+ 4. O atacante deve atrair a vítima para uma página Web com código malicioso
+    enquanto a vítima está conectada ao site de destino. 
+#+end_example
+
+
+** Click-Jacking												   :noexport:
+
+#+begin_quote
+A ideia básica se concentra em sobrepor algum elemento clicável na tela com um
+Iframe, ou quadro invisível contendo a página em que o atacante quer que o
+usuário execute uma atividade. 
+
+
+No clickjacking típico esse iframe é 100% transparente, ou redimensionado e
+posicionado de forma que ocupe a área de um botão na página que a vítima
+acredita ser inofensiva.
+
+
+O usuário clica no botão da página inofensiva, mas na verdade seu clique é
+executado em outra página, na que foi carregada dentro do iframe. 
+#+end_quote
+
+** Phishing														   :noexport:
+
+#+begin_quote
+(Phishing), é uma tentativa de um fraudador tentar "pescar" informações
+pessoais de usuários desavisados ou inexperientes.
+
+#+end_quote
+
+
+** SQL Injection 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/exploits_of_a_mom.png]]
+
+** SQL Injection												   :noexport:
+
+#+begin_quote
+A Injeção de SQL, mais conhecida através do termo americano SQL Injection, é um
+tipo de ameaça de segurança que se aproveita de falhas em sistemas que interagem
+com bases de dados via SQL. A injeção de SQL ocorre quando o atacante consegue
+inserir uma série de instruções SQL dentro de uma consulta (query) através da
+manipulação das entradas de dados de uma aplicação. 
+#+end_quote
+
+#+CAPTION: Bobby Tables
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/exploits_of_a_mom.png]]
+
+
+
+** Desenvolvimento vs Infraestrutura
+
+ * Existem situações em que ser apenas *desenvolvedor* não basta.
+
+ * A arquitetura das aplicações depende de muitos fatores que nem sempre (pra
+   não falar /nunca/) são levados em conta pelos desenvolvedores no momento da
+   codificação.
+
+ * Principalmente aplicações de alto desempenho, onde cada operação no
+   banco de dados conta e cada ciclo do processador deve ser levado em conta
+   para o dimensionamento de hardware e conexões de rede.
+
+*** 																:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:BEAMER_act: <2->
+	:END:
+
+#+begin_quote
+ Aplicações são como /gremlins/, quando menos você espera  elas crescem e viram monstros fora de controle...
+#+end_quote
+
+
+** Bash Bug
+
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/bashbug2.jpg]]
+
+#+begin_quote
+env x='() { :;}; echo vulnerable' 
+ bash -c "echo this is a test"
+#+end_quote
+
+
+*** 															   :noexport:
+
+ #+begin_quote
+ Shellshock, also known as Bashdoor, is a family of security bugs in the
+ widely used Unix Bash shell, the first of which was disclosed on 24
+ September 2014. Many Internet-facing services, such as some web server
+ deployments, use Bash to process certain requests, allowing an attacker to cause
+ vulnerable versions of Bash to execute arbitrary commands. This can allow an
+ attacker to gain unauthorized access to a computer system. 
+ #+end_quote
+
+
+** Bash Bug
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/bash-bug-webserver-stats.png]]
+
+** Bash Bug
+
+#+begin_quote
+It's super simple to solve this problem. 
+
+#+latex: \\[0.2cm]
+Many software developers have already issued patches and more are being released
+by the hour. 
+#+latex: \\[1cm]
+
+Two of the most popular Linux distributions, Red Hat and Ubuntu, already have patches available, and we
+suspect Apple will soon release its fix. Updating a system takes almost no
+time. 
+
+#+latex: \\[0.2cm]
+It's a simple process and it's a common task for most users. *The problem
+is with systems that are not often updated.*  
+#+end_quote
+#+LaTeX: \begin{flushright} Engadget \end{flushright}
+
+** DevOPS 
+
+#+BEGIN_QUOTE
+DevOps (conjunção de Desenvolvedor e Operações) é uma *metodologia de
+desenvolvimento de software* que explora a *comunicação, colaboração e integração*
+entre desenvolvedores de software e profissionais de TI (Tecnologia da
+Informação).
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+DevOps é a reação à *interdependência entre desenvolvimento de software e
+operações de TI*. 
+#+END_QUOTE
+
+#+LaTeX: \begin{flushright} Wikipédia \end{flushright}
+
+** DevOPS 
+
+#+CAPTION:
+#+LABEL: 
+#+ATTR_LaTeX: :width 8cm  :placement [h!]
+[[./images/seg/devops.png]]
+
+** DevOPS ou Desenvolvedor ?									   :noexport:
+
+ * Independente da vocação (DevOPS/Desenv) , é importante ter uma visão holística de
+   todo o ecosistema da aplicação!
+
+
+
+* Criptografia 
+
+** Criptografia
+
+ + Última linha de Defesa
+ + Proteção dos dados
+   + Em repouso
+   + Em Trânsito
+ + Segurança de Comunicações
+   + IPSec
+   + SSL
+  
+
+** Desenvolvimento
+
+ * Mesmo utilizando criptografia, não temos como fazer tudo.
+
+
+ * *Invariavelmente algum trabalho* tem que ser *terceirizado* ou alguma
+   biblioteca é utilizada.  O que acaba levando a outros problemas ...
+
+** HeartBleed
+#+begin_quote
+The Heartbleed Bug is a serious vulnerability in the popular OpenSSL
+cryptographic software library. This weakness *allows stealing* the *information
+protected*, under normal conditions, *by the SSL/TLS encryption* used to secure the
+Internet. SSL/TLS provides communication security and privacy over the Internet
+for applications such as web, email, instant messaging (IM) and some virtual
+private networks (VPNs). 
+#+end_quote
+
+#+CAPTION: http://heartbleed.com/
+#+LABEL: 
+#+ATTR_LaTeX: :width 4cm  :placement [h!]
+[[./images/seg/heartbleed.png]]
+
+
+** HeartBleed comics
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/heartbleed_explanation_1.png]]
+
+** HeartBleed comics
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/heartbleed_explanation_2.png]]
+
+** HeartBleed comics
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/heartbleed_explanation_3.png]]
+
+** HeartBleed 
+
+Tudo isso por quê ?
+
+ + confiança no 'outro lado'
+ + falta de validação simples
+
+
+** Criptografia
+
+ * ... mesmo com tudo isso ainda usamos criptografia ?
+ * <2-> Sim! Ainda queremos proteger nossas informações ....
+ * <3-> e também o nosso dinheiro ;-)
+
+
+** Criptografia
+
+Entre as diferentes aplicações de criptografia que podemos citar está a
+criptomoeda (/cryptocurrency/).
+
+#+begin_quote
+A cryptocurrency (or crypto currency) is a medium of exchange using cryptography
+to secure the transactions and to control the creation of new units.
+Cryptocurrencies are a subset of alternative currencies, or specifically of
+digital currencies. 
+#+end_quote
+
+** Criptografia e Dinheiro
+
+# http://www.infomoney.com.br/blogs/moeda-na-era-digital/post/3160782/dez-formas-explicar-que-bitcoin
+#+CAPTION:
+#+LABEL: 
+#+ATTR_LaTeX: :width 6cm  :placement [h!]
+[[./images/seg/bitcoin.jpg]]
+
+ 
+** Bitcoin ?!
+
+#+BEGIN_QUOTE
+"Bitcoin é uma forma de dinheiro, com a diferença de ser digital e não ser
+emitido por nenhum governo. Para transações online, é a forma ideal de
+pagamento, pois é rápido, barato e seguro. É uma tecnologia inovadora."
+
+#+LaTeX: \\[0.5cm] \begin{flushright} Mercado Bitcoin \end{flushright}
+#+END_QUOTE
+
+
+#+BEGIN_QUOTE
+ Bitcoin é um software de código-fonte aberto, sustentado por uma rede de
+ computadores distribuída (peer-to-peer) em que cada nó é simultaneamente
+ cliente e servidor. Não há um servidor central nem qualquer entidade
+ controlando a rede. O protocolo do Bitcoin, baseado em criptografia avançada,
+ define as regras de funcionamento do sistema, às quais todos os nós da rede
+ aquiescem, assegurando um consenso generalizado acerca da veracidade das
+ transações realizadas e evitando qualquer violação do protocolo. 
+#+END_QUOTE
+
+** Por que Bitcoin ? 
+
+ + Moeda Virtual com muita exposição na mídia
+ + Várias instituições de diversos países aceitam
+ + "Não é para os fracos" ... 
+
+#+CAPTION: Variação na cotação do bitcoin
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/coindesk-bpi-chart.png]]
+
+** Bitcoin ?! 
+No que a moeda virtual pode influenciar o desenvolvimento de Software ?
+
+*** Quem aceita bitcoins hoje ? 									:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:END:
+
+	+ WordPress.com 
+	+ Overstock.com 
+	+ Amazon 
+	+ Target 
+	+ CVS 
+	+ Subway 
+	+ Victoria’s Secret
+
+*** Qual o risco ?													:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:BEAMER_act: <2->
+	:END:
+
+   + Variabilidade do câmbio
+   + Dificuldade em gerar novos bitcoins, exigindo mais poder computacional.
+
+
+** Bitcoin
+*** Viabilidade														:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:END:
+ + Você saberia avaliar se é viável a utilização de bitcoins no seu negócio ?
+
+*** Bitcoin Argentina												:B_block:
+	:PROPERTIES:
+	:BEAMER_env: block
+	:BEAMER_act: <2->
+	:END:
+	+ Mercados em crise como o da Argentina viram no BTC uma moeda mais estável
+      que a local.
+
+#+BEGIN_QUOTE
+And so Argentines, at least the most technologically savvy of them, are turning
+to bitcoin as a way to exchange their pesos for what they’re actually worth,
+rather than what the government says they should be worth. Bitcoin, in other
+words, is _simply a way for Argentines to make an end-run around the banking
+system_, which works with the Argentine government to force its citizens to use
+the ever-devaluing peso.  
+#+LaTeX: \begin{flushright} Forbes \end{flushright}
+#+END_QUOTE
+
+
+** Popularidade
+
+ * E como o bitcoin se tornou tão popular ?
+
+
+** Silk Road 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/Silk_Road_Marketplace_Item_Screen.jpg]]
+
+
+** Silk Road 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/Silk_Road_Seized.jpg]]
+
+** Silk Road 
+
+#+CAPTION: Efeitos no Bitcoin após fechamento Silk Road
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/Bitcoin_October_2013.png]]
+
+
+** Silk Road - tecnologias
+#  + Cinco Tecnologias que traíram a anonimidade da Silk Road - http://www.itworld.com/article/2881775/four-technologies-that-betrayed-silk-roads-anonymity.html
+
+*** 1 -  Bitcoin 
+ #+BEGIN_QUOTE
+ If you assume your bitcoins can’t be traced back to you, think again. Like cash,
+ bitcoins aren’t tied to a person’s identity. But unlike cash, a detailed public
+ ledger called the blockchain keeps track of each wallet a bitcoin passes
+ through.  
+ #+END_QUOTE
+
+*** 2 - Chat logs
+
+#+BEGIN_QUOTE
+So much chatter. Thousands of pages of chat logs helped prosecutors trace the
+growth of Silk Road.  
+#+END_QUOTE
+
+** Silk Road - tecnologias
+
+*** 3 - Encryption
+
+#+BEGIN_QUOTE
+Encryption puts a digital padlock on information so it can’t be viewed. But
+eventually the person with the keys has to unlock the information in order to
+see it. That’s why law enforcement agents had to catch Ulbricht while he was
+logged into the SIlk Road’s admin console. 
+#+END_QUOTE
+
+
+*** 4 - Facebook and other public websites
+
+#+BEGIN_QUOTE
+Ulbricht sowed the seeds of his demise the very first time he publicized the
+Silk Road. To get people interested in the the new site in January 2011,
+Ulbricht posted a message on the Bitcointalk.org forum, under the username
+Altoid, asking if anyone had tried the site. 
+#+END_QUOTE
+
+** Silk Road - tecnologias
+
+*** 5 - Automated server log-ins
+
+#+BEGIN_QUOTE
+The Silk Road servers were maintained in large part through ssh (Secure Shell),
+a tool that allows administrators to log into remote machines in a way that the
+communication is encrypted. Users can set up ssh hosts such that trusted parties
+can log in automatically without providing a password. A list of trusted parties
+is kept in a file on the server, along with their encrypted passkeys. 
+#+END_QUOTE
+
+
+** Bancos 
+
+Toda moeda precisa de um 'banco' para ser armazenada de forma 'segura'.
+
+
+** MtGox - história
+
+Mt. Gox was a Bitcoin exchange based in Tokyo, Japan. It was launched in July
+2010, and *by 2013 was handling 70%* of all Bitcoin transactions.  
+#+LaTeX: \\[0.2cm]
+In *February 2014*, the Mt. Gox company suspended trading, closed its website and exchange
+service, and *filed* for a form of *bankruptcy* protection from creditors called
+minji saisei, or civil rehabilitation, to allow courts to seek a buyer. 
+
+#+LaTeX: \\[0.2cm]
+
+In April 2014, the company began liquidation proceedings. 
+
+#+LaTeX: \\[0.2cm]
+
+It announced that around *850,000 bitcoins* belonging to customers and the company
+were missing and likely *stolen*, an amount valued at more than *$450 million* at
+the time. 
+
+#+LaTeX: \\[0.2cm]
+
+Although 200,000 bitcoins have since been "found", the reason(s) for the
+disappearance -- *theft, fraud, mismanagement*, or a combination of these -- are unclear
+as of March 2014.
+
+** MtGox 
+ Problemas de segurança no código causam estragos problemas ao MtGox:
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 9cm  :placement [h!]
+[[./images/seg/coins-money-mt-gox.png]]
+
+** MtGox 
+
+Yesterday, the bitcoin exchange MtGox – riddled by problems – issued a press
+release saying the bitcoin protocol was to blame for its ongoing problems. That
+statement, which caused the markets to nosedive temporarily, is outright
+false. *The problem is, and was, bad code hygiene* in the MtGox exchange
+itself. Here are the details. 
+#+LaTeX: \\[0.2cm]
+
+(...)
+
+#+LaTeX: \\[0.2cm]
+
+Here’s the real problem: *MtGox is running its own homebuilt bitcoin software, and has not cared to update and upgrade that software along with the
+developments of the bitcoin protocol*. Recently, after a very long grace period, 
+the bitcoin protocol tightened slightly in order to disallow unnecessary
+information in transaction records, and did this to fix the malleability problem
+that MtGox blamed. 
+
+** E não foi só Mt. Gox que se foi ... 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/chinese-bitcoin-exchange-vanished.png]]
+
+
+
+** E não foi só Mt. Gox que se foi ... 
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 11cm  :placement [h!]
+[[./images/seg/my-coin-vanishes.png]]
+
+** Silk Road II Hacked
+  
+
+#+CAPTION: 
+#+LABEL: 
+#+ATTR_LaTeX: :width 10cm  :placement [h!]
+[[./images/seg/silk-road2-hacked.png]]
+
+** Em resumo
+
+ * Manter atualizado o código com a evolução dos protocolos (nesse caso bitcoin)
+   é algo mais que necessário, é imprescindível. 
+
+ * Estar atualizado com o que acontece é deveras importante, independente de
+   qual a sua função. 
+
+
+
+** Segurança na Nuvem ?											   :noexport:
+
+#+CAPTION: O que é 'A Nuvem'? 
+#+LABEL: 
+#+ATTR_LaTeX: :width 8cm  :placement [h!]
+[[./images/seg/cloud-computing.png]]
+
+** Nuvem e Segurança											   :noexport:
+
+ + 
+
+ + Caso das fotos de celebridades que estavam na nuvem da apple(icloud) e que
+   foram publicadas no imgurl
+
+
+
+* Atualização
+
+** Centros de Tratamento de Incidentes - CERTs
+
+  + http://www.cert.br/
+  + http://www.cert.org/
+  + http://www.apcert.org/about/structure/members.html (lista de diversos CERTs)
+
+*** Grupos de Resposta a Incidentes de Segurança em Computadores (CSIRTs)
+
+  + http://www.cert.br/csirts/
+  + http://www.first.org/
+  + https://www.trusted-introducer.org/
+
+** Listas de E-mail 
+
+ + http://seclists.org/
+   + Full Disclosure
+   + Secure Coding
+   + Data Loss
+   + Open Source Security
+   + Bugtraq
+ + https://www.defcon.org/html/links/mailing-lists.html
+   + NT Security
+   + Info Sec News [ISN]
+  
+
+*** Benefícios ...
+
+ A parte boa da lista é que a informação `vem` até você...
+
+** Twitter I
+
+ * @securityfocus
+ * @NakedSecurity
+ * @CiscoSecurity
+ * @SearchSecurity
+ * @msftsecurity -- microsoft
+ * @debian_security
+ * @fedorasecurity
+ * @IntelSecurity
+ * @VisaSecurity -- tecnologia nos cartões de crédito
+ * @SecureTips
+ * @nodesecurity -- node.js
+ * @CASecurity
+
+** Twitter II
+
+ * @Snort
+ * @mozsec -- Mozilla Firefox Security Team
+ * @secprods
+ * @SecurityXploded
+ * @SecurityTube
+ * @TheHackersNews
+ * @SANSInstitute
+ * @owasp
+ * @Kasperskybrasil
+   * entre outos ....
+
+** Sites de Notícias
+
+*** Informações Técnicas
+
+  + http://www.securityfocus.com/
+  + https://nakedsecurity.sophos.com
+  + http://searchsecurity.techtarget.com/
+  + https://securelist.com/
+  + https://cve.mitre.org/news/index.html
+
+
+*** Notícias para Gestores
+
+  + http://computerworld.com.br/seguranca
+
+
+** Segurança é responsabilidade
+
+#+BEGIN_LaTeX
+\begin{Large}
+  De quem é a responsabilidade por garantir a segurança ?
+\end{Large}
+
+#+END_LaTeX
+ * <2-> ... \LARGE de todos os envolvidos!
+
+
+* Conclusão
+
+** Então ... 
+
+#+BEGIN_LaTeX
+\begin{Large}
+... a Batcaverna é Segura ?
+\end{Large}
+
+#+END_LaTeX
+
+
+
+** E aí, a Batcaverna é Segura ?
+
+ #+CAPTION: 
+ #+LABEL: 
+ #+ATTR_LaTeX: :width 9cm  :placement [h!]
+ [[./images/seg/seguranca-batcaverna-anos2k.png]]
+
+ Não adianta toda a segurança do mundo se não fizermos nossa parte educando os
+ usuários/clientes com o que eles podem ou não fazer.
+
+** Contato
+
+#+BEGIN_CENTER
+ Leslie H. Watter
+
+ watter@gmail.com
+
+ http://github.com/watter
+#+END_CENTER
+
+
+** Referências
+
+#+latex: \scriptsize
+
+ 1) http://www.bitcoinvalues.net/who-accepts-bitcoins-payment-companies-stores-take-bitcoins.html
+ 2) https://fortune.com/2015/05/04/bitcoin-argentina/
+ 3) http://pt.wikipedia.org/wiki/DevOps
+ 4) http://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o
+ 5) http://www.smashingmagazine.com/2010/10/18/common-security-mistakes-in-web-applications/
+ 6) http://www.infomoney.com.br/blogs/moeda-na-era-digital/post/3160782/dez-formas-explicar-que-bitcoin
+ 7) http://explainextended.com/2014/07/09/top-5-xkcd-comics-which-can-illustrate-programming-questions/
+ 8) http://en.wikipedia.org/wiki/Kaspersky_Lab
+ 9) http://www.troyhunt.com/2014/09/everything-you-need-to-know-about.html
+ 10) http://sdlc.uconn.edu/
+ 11) https://cve.mitre.org/news/index.html
+ 12) https://nvd.nist.gov/home.cfm
+ 13) http://falkvinge.net/2014/02/11/the-embarrassing-fact-mtgox-left-out-of-their-press-release/
+ 14) http://www.deepdotweb.com/2014/02/13/silk-road-2-hacked-bitcoins-stolen-unknown-amount/
+ 15) http://www.engadget.com/2014/09/25/what-is-the-shellshock/
+
+#+latex: \normalsize
+
+
+* Pontos Fracos da Segurança									   :noexport:
+
+** Ambiente
+
+** Configurações
+
+** Desatualização
+
+** Código 
+
+** O fator humano
+
+
+
+** 																   :noexport:
+ + http://exame.abril.com.br/revista-exame-pme/edicoes/60/noticias/6-perigos-de-seguranca-em-ti-que-ameacam-empreendedores
+ + http://www.virtuallink.com.br/blog/?p=1439
+
+** 																   :noexport:
+*** 															   :noexport:
+http://www.cnasi.com.br/as-diferencas-da-seguranca-da-informacao-para-a-seguranca-de-ti/
+AS DIFERENÇAS DA SEGURANÇA DA INFORMAÇÃO PARA A SEGURANÇA DE TI
+
+Um erro muito comum que as pessoas cometem é atrelarem a Segurança da
+Informação, e todos os seus processos, à Segurança relacionada à Tecnologia da
+Informação. O fato que gera essa sensação inexistente de sinônimos pode ser
+explicada pelo raciocínio que leva as pessoas a crerem que a Segurança da
+Informação está totalmente interligada com os computadores. Não
+necessariamente. 
+
+Isso pode ser contestado, a medida que compreendemos que uma empresa pode ter
+medidas de segurança de TI perfeitas, mas, sempre, estará a mercê de um único
+ato malicioso de má fé, feito, por exemplo, por um administrador, e que pode
+comprometer todo o sistema de TI, levando-o ladeira abaixo. Toda essa
+preocupação, esse risco que a empresa pode sofrer, não cabe ser combatido com
+softwares ou programas de prevenção, pois tem a ver com processos, supervisões
+e, principalmente, pessoas. E pessoas, como bem sabemos, são imprevisíveis… 
+
+Além disso, também podemos considerar que nem todas as informações podem ou são
+armazenadas em formato digital. O papel, mesmo que não pareça, ainda é um meio
+bastante utilizado para esse fim. Um contrato com um determinado cliente, que
+foi assinado, recentemente; senhas importantes de administrador, que estão
+impressas e guardadas, dentro de um cofre; ou mesmo anotações pessoais, feitas
+por um diretor da empresa, podem estar registradas pela caneta e o papel, e,
+nesse caso, iriam embora, em um eventual ato de má fé. 
+
+A Segurança de TI deve ser encarada como, “apenas”, cinqüenta por cento da
+segurança da informação, pois essa (SI) também compreende um certo nível de
+segurança física, de gestão de recursos humanos, proteção jurídica e de proteção
+aos processos e à organização. O seu objetivo é construir um sistema que leve em
+consideração todos os possíveis riscos inaceitáveis, que podem atingi-la,
+estando eles relacionados à Tecnologia da Informação, ou não, e implementar os
+controles abrangentes cabíveis, que possam reduzi-los. 
+
+Por isso, esses projetos e essas medidas não devem ser vistas como partes de um
+projeto de TI, uma vez que, como tal, seria muito provável que nem todas as
+partes da empresa se dispusessem a colaborar. Ao invés disso, deve ser encarado
+como um projeto de toda a empresa, do qual todos os integrantes, que sejam
+relevantes à ele, devem participar, desde a alta administração, passando pela
+equipe de TI, gestores de recursos humanos, especialistas jurídicos, até o lado
+comercial da empresa. Do contrário, você estará cometendo um grande erro,
+trabalhando com segurança de TI. E isso, não protegerá a empresa de riscos
+maiores. 
+
+
+
+*** 															   :noexport:
+http://exame.abril.com.br/revista-exame-pme/edicoes/60/noticias/6-perigos-de-seguranca-em-ti-que-ameacam-empreendedores
+6 perigos de segurança em TI que ameaçam empreendedores
+
+Ações aparentemente inofensivas, como utilizar pen drives, podem trazer riscos para a segurança de uma PME
+Camilla Ginesi, da EXAME PME
+
+São Paulo - Para muitos empreendedores, proteger as informações armazenadas em seus softwares e computadores é um aspecto estratégico do negócio. Nem sempre, no entanto, eles cuidam do assunto como deveriam.
+
+“Existe na maioria das empresas a preocupação de manter seguros os sistemas mais complexos”, diz Camillo Di Jorge, diretor da empresa de segurança digital Eset. “É comum, no entanto, deixar de lado problemas menores e que abrem brechas para invasores.”
+
+Exame­ PME consultou empreendedores e especialistas para saber quais pontos básicos de segurança em TI merecem atenção. 
+
+1 Plugar pen drives ou outros dispositivos
+
+No ano passado, o engenheiro João Marcos Dalla Rosa, de 50 anos, dono da catarinense Real Estúdio, passou por três situações parecidas em que os computadores da empresa pararam de funcionar por um dia inteiro. A causa da paralisação, nos três casos, estava em arquivos contaminados por vírus que haviam se instalado no servidor da empresa, tornando os dados inacessíveis.
+
+“Perdi informações sobre negociações com clientes e fornecedores porque os sistemas precisaram ser reinstalados do zero”, diz Dalla Rosa. Primeiro, ele pensou que alguns funcionários ti­vessem acessado arquivos inseguros durante o expediente, como joguinhos e músicas baixadas de sites inapropriados.
+
+Depois, descobriu que os vírus vinham de um lugar até então insuspeito — os pen drives que os clientes traziam para a empresa. 
+
+O negócio da Real Estúdio é imprimir estampas para que indústrias têxteis e con­fecções as apliquem em tecidos. Os clientes costumam entregar os desenhos das estampas em pen drives, que, em alguns casos, estão infectados. “Agora, deixamos um computador isolado da rede só para receber as estampas”, afirma Dalla Rosa. 
+
+Para muitas empresas, proibir os funcionários e clientes de plugar dispositivos USB nas redes não é uma opção — embora armazenar os arquivos na internet possa ser uma alternativa, o pen drive ainda é uma opção prática para lidar com o leva e traz de documentos mais pesados.
+
+O que fazer? “Atualmente, há pen drives com suporte a criptografia e sensor de biometria que identificam se o aparelho está autorizado a ser plugado na rede”, afirma Jefferson D’Addario, professor de gestão e tecnologia da Faculdade Impacta. “Do lado da empresa, softwares de segurança fazem uma varredura instantânea para detectar eventuais arquivos infectados.”
+
+2 Usar versões desatualizadasde softwares
+
+É difícil passar algum tempo no computador sem que apareçam várias janelinhas sugerindo instalar novas versões de aplicativos. A dificuldade é saber quais atualizações precisam ser instaladas imediatamente e quais podem ser deixadas para depois. 
+
+
+Numa pesquisa recente feita com usuários do programa de telefonia Skype, 40% disseram que não atualizam o software quando é solicitado pela primeira vez — metade respondeu que precisava ser alertado de três a cinco vezes até se convencer de que era importante instalar a nova versão do programa.
+
+“O uso de versões defasadas pode abrir brechas de segurança, facilitar a entrada de vírus e o acesso a documentos sigilosos”, diz Mariano Sumrell, diretor da consultoria de segurança AVG Brasil. “O empreendedor não pode esperar que os funcionários baixem as atualizações por conta própria.”
+
+Para escritórios com mais de 15 computadores em rede, os especialistas recomendam usar sistemas conhecidos, como gerenciadores de patchs, que agrupam arquivos de diferentes softwares e aplicam as atualizações de forma automática em todas as máquinas.
+
+3 Criar senhas fáceis de descobrir
+
+Os hackers constantemente criam novas estratégias de ataque e softwares para descobrir senhas. Os programas mais conhecidos testam nomes próprios. Outros usam palavras do dicionário ou títulos de filmes e nome de personagens famosos.
+
+Hackers que têm como alvo invadir os sistemas de determinada empresa ou site desenvolvem programas que adotam o método conhecido como “força bruta”, que testa milhões de combinações de letras e números possíveis até descobrir a correta.
+
+“Justamente porque é impossível criar senhas totalmente impenetráveis, é importante que os funcionários sejam obrigados a criar combinações de caracteres que não sejam óbvias”, diz Sérgio Dias, especialista em segurança da americana Symantec. “O ideal é mesclar números e símbolos com letras maiúsculas e minúsculas.” 
+
+Um problema comum em muitas empresas é o compartilhamento de senhas. “Um mesmo código usado por duas pessoas já é quase uma senha pública e perde sua função”, afirma Dias. O uso de login individual permite à empresa controlar exatamente quem está acessando o quê.
+
+4 Contentar-se com o antivírus
+
+Com tantas novas ameaças surgindo a todo o momento, é impossível uma empresa se proteger somente com programas de anti­vírus.
+
+Os especialistas recomendam que os empreen­dedores contratem um sistema de firewall (“barreira corta-fogo”, na tradução do inglês), que permite identificar e blo­quear dados suspeitos ainda na entrada do servidor de internet — antes, portanto, que eles cheguem aos computadores e às caixas de e-mail dos funcionários.
+
+“Não é uma boa ideia deixar o usuário decidir se deve ou não confiar em um anexo recebido por e-mail”, diz Mariano Sumrell, da AVG Brasil. “Ao bloquear o conteúdo suspeito logo na entrada do servidor, o risco de alguém abrir um arquivo infectado cai drasticamente.” 
+
+
+Além dos vírus, bons firewalls devem ser capazes de barrar a entrada de uma verdadeira fauna de softwares intrusos, como spywares, trojans e keyloggers — programinhas es­piões que permitem monitorar as atividades realizadas num computador e até gravar tudo o que é digitado e enviar os dados com data e hora por e-mail.
+
+Eles podem permanecer invisíveis por um longo período, sem que os usuários das máquinas invadidas percebam. “Introduzir um software espião num servidor da empresa e replicá-lo em vários PCs é o suficiente para comprometer informações sigilosas do negócio”, diz Sumrell. 
+
+5 Imprimir documentos
+
+As impressoras são uma das principais fontes de vazamento de dados — e talvez a mais insuspeita. Poucos se dão conta de que os modelos mais recentes desse tipo de equipamento são verdadeiros centros de processamento de informações, muitas vezes equipados com HDs próprios e capacidade de transferir dados para outros aparelhos. 
+
+“Cada imagem digitalizada, impressa ou reencaminhada por e-mail pode ser armazenada para sempre na memória de uma impressora”, afirma Camillo Di Jorge, diretor da empresa de segurança Eset.
+
+ “Com base no tipo de informação que o empreendedor lida no dia a dia, é interessante configurar a limpeza do HD das impressoras regularmente.” Em qualquer empresa, grande ou pequena, também é comum encontrar documentos esquecidos nas impressoras — como acontece quando os funcionários mandam imprimir e deixam de buscar.
+
+Uma sugestão dos especialistas é nomear um responsável por fazer uma ronda de tempos em tempos — uma ou duas vezes ao dia, por exemplo — à caça de documentos largados nas impressoras. “Imagine o que pode acontecer caso alguém mal-intencionado passe por ali e veja dados financeiros, planilhas de RH, fichas de clientes e contratos sigilosos”, diz Di Jorge.
+
+6 Não fazer backups suficientes
+
+Manter os backups automatizados é um hábito bastante raro no mundo dos pequenos e médios negócios. De acordo com estimativas da empresa de segurança Computer Associates, somente 25% das empresas têm processos organizados para prevenir a perda de informações. A maioria delas faz backups manuais e apenas de vez em quando verifica se as cópias foram feitas direito — e acha que está tudo bem. 
+
+Em 2007, o engenheiro Alan Pakes, de 35 anos, sócio da empresa de intercâmbio Invista em Você, fazia backup de algumas informações do negócio, como lista de clientes e dados financeiros, em um computador pessoal. Quando o computador quebrou, Pakes se desesperou.
+
+“Recuperei parte do conteúdo, mas perdi informações mais antigas que só estavam nele”, diz. Quando a computação em nuvem começou a se popularizar, após algum tempo, Pakes decidiu armazenar os arquivos imprescindíveis na internet.
+
+“O backup na nuvem pode ser feito automaticamente e sem a preocupação do espaço em disco acabar no meio da operação”, diz Pakes. “Não corro mais o risco de perder documentos.” 
+
+Muitos donos de pequenas e médias empresas ainda têm receio de colocar alguns tipos de informação na nuvem — dados financeiros, por exemplo.
+
+“Os principais cuidados a ser tomados para manter tudo seguro é contratar fornecedores de confiança, criar senhas complexas e dividir o acesso aos arquivos por níveis de responsabilidade de cada funcionário”, afirma Felipe Cataldi, diretor da desenvolvedora de softwares na nuvem BetaLabs.
+
+De acordo com uma pesquisa recente da Symantec, 65% dos donos de pequenas e médias empresas já perderam informações importantes por não realizar back­ups regularmente. O backup, quando é feito do jeito certo, ajuda o empreendedor a se prevenir caso os computadores da empresa sofram problemas que inviabilizam seu uso, como desgaste do HD, quedas, incêndios, alagamentos e roubos.
+
+
+
+* Aspectos de Segurança											   :noexport:
+
+# ambiente
+
+** Ambiente
+
+Diferenciação de Ambiente
+
+
+** Desktops versus Servidores
+
+*** Desktop
+   * Vírus
+   * SPAM
+   * Malware
+   * Spyware
+	 * O que mais ?
+
+*** Servidores
+ 
+  * Controle de Acesso (Físico e Lógico)
+  * Auditoria
+  * Manutenção 
+
+
+# responsabilidade
+
+** Responsabilidades
+
+Quem é responsável por fazer o quê? 
+
+Responsabilidade Compartilhada: 
+
+ + Infraestrutura
+ + desenvolvimento
+ + usuários
+
+
+
+
